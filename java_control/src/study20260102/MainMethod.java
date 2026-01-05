@@ -1,5 +1,7 @@
 package study20260102;
 
+import java.util.Scanner;
+
 public class MainMethod {
 
 	public static void main(String[] args) {
@@ -39,7 +41,24 @@ public class MainMethod {
 		 // 예) 3시간 50분 (230분) -> 3000원
 		 //   4시간 12분 (252분) -> 2600원     
 		 
-		
+		 int cost = 1000; // 기본요금 (30분)
+		 int inc = 100, incTime = 10; //10분당 100원
+		 int time = 30; // 기본시간 30분
+		 
+		 // 주차 시간 총 몇분 입력
+		 Scanner scan = new Scanner(System.in); // 시스템(컴퓨터)으로 부터 입력된키 값 받기
+		 
+		 System.out.print(" 총 몇분 주차 : ");
+		 int pTime = scan.nextInt(); // 키보드 입력 값 받아서 정수로 변환하여 변수에 저장
+		 
+		 pTime /= 10;
+		 if(pTime >= 24) {// 4시간 이상 주차했다면
+			 cost=2500; // 4시간 이상에 대한 기본요금 변경
+		 }
+		 
+		 
+		 // 주차 요금 
+		 
 		
 	}
 

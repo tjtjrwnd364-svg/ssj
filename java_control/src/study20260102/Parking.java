@@ -18,7 +18,7 @@ public class Parking {
         int minute;
         int money = 0;
 
-        System.out.print("주차 시간(분) 입력: ");
+        System.out.print("주차 시간을 입력하세요: ");
         minute = sc.nextInt();
 
         if (minute >= 240) {
@@ -39,6 +39,7 @@ public class Parking {
             
             }
         }
+  
 
         System.out.println("요금: " + money + "원");
     }
